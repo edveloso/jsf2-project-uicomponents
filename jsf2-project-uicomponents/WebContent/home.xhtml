@@ -1,17 +1,80 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-  xmlns:f="http://java.sun.com/jsf/core"
-  xmlns:h="http://java.sun.com/jsf/html">
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 <title>Projeto simples JSF 2.0-Compenents</title>
 </head>
 <body>
-  
-  
-   Helo initial project!
-  
+
+	<h1>Exemplos de elementos de formulário</h1>
+
+
+	<h:form>
+
+
+		<h:panelGrid columns="1"> 
+       		Caixa de senha <h:inputSecret />
+       		Textarea <h:inputTextarea cols="30" rows="10" />
+       		
+       		Checkbox
+			<h:selectManyCheckbox value="#{user.favNumber1}">
+				<f:selectItem itemValue="1" itemLabel="Number1 - 1" />
+				<f:selectItem itemValue="2" itemLabel="Number1 - 2" />
+				<f:selectItem itemValue="3" itemLabel="Number1 - 3" />
+			</h:selectManyCheckbox>
+
+			
+			Radio button
+			<h:selectOneRadio value="#{user.favColor1}">
+				<f:selectItem itemValue="Red" itemLabel="Color1 - Red" />
+				<f:selectItem itemValue="Green" itemLabel="Color1 - Green" />
+				<f:selectItem itemValue="Blue" itemLabel="Color1 - Blue" />
+			</h:selectOneRadio>
+
+
+			List box
+			<h:selectOneListbox value="#{user.favYear1}">
+				<f:selectItem itemValue="2000" itemLabel="Year1 - 2000" />
+				<f:selectItem itemValue="2010" itemLabel="Year1 - 2010" />
+				<f:selectItem itemValue="2020" itemLabel="Year1 - 2020" />
+			</h:selectOneListbox>
+
+
+			Caixa com múltipla seleção 
+			<h:selectManyListbox value="#{user.favFood1}">
+				<f:selectItem itemValue="Fry Checken"
+					itemLabel="Food1 - Fry Checken" />
+				<f:selectItem itemValue="Tomyam Soup"
+					itemLabel="Food1 - Tomyam Soup" />
+				<f:selectItem itemValue="Mixed Rice" itemLabel="Food1 - Mixed Rice" />
+			</h:selectManyListbox>
+
+			Combo
+			<h:selectOneMenu value="#{user.favCoffee1}">
+				<f:selectItem itemValue="Cream Latte"
+					itemLabel="Coffee3 - Cream Latte" />
+				<f:selectItem itemValue="Extreme Mocha"
+					itemLabel="Coffee3 - Extreme Mocha" />
+				<f:selectItem itemValue="Buena Vista"
+					itemLabel="Coffee3 - Buena Vista" />
+			</h:selectOneMenu>
+
+			
+			Imagem 
+			<h:graphicImage value="https://www.ibm.com/developerworks/mydeveloperworks/blogs/752a690f-8e93-4948-b7a3-c060117e8665/resource/BLOGS_UPLOADED_IMAGES/github-profile.png" />
+			
+		</h:panelGrid>
+
+	</h:form>
+
+
+
+
+
+
 
 
 </body>

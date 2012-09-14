@@ -8,6 +8,7 @@
 </head>
 <body>
 
+
    <h1>Projeto simples JSF 2.0-Compenents</h1>
    <br>
    Clique <a href="home.jsf">aqui</a> para acessa o projeto!
